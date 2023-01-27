@@ -6,7 +6,7 @@ RUN mvn package -DskipTests
 
 #Stage 1 - package app to Run
 
-FROM openjdk:18-alpine AS RUN
+FROM openjdk:19-alpine AS RUN
 WORKDIR /run
 COPY --from=BUILD /app/target/demo-0.0.1-SNAPSHOT.jar demo.jar
 
