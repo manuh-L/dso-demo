@@ -120,7 +120,7 @@ pipeline {
         stage('Image Scan') {
           steps {
             container('docker-tools') {
-              sh 'trivy image --timeout 12m nhiuana/dso-demo'
+              sh 'trivy image --timeout 12m openjdk:19-alpine'
               }
             }
           }
