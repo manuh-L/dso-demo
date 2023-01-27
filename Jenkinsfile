@@ -120,7 +120,7 @@ pipeline {
         stage('Image Scan') {
           steps {
             container('docker-tools') {
-              sh 'trivy image --exit-code 1 nhiuana/dso-demo --timeout 10m'
+              sh 'trivy image --exit-code 1 --timeout 10m nhiuana/dso-demo'
               }
             }
           }
