@@ -1,5 +1,5 @@
 #Stage 0 - Build artifact from source
-FROM maven:3.8.7-openjdk-18 AS BULD
+FROM maven:3.8.7-openjdk-18 AS BUILD
 WORKDIR /app
 COPY .  .
 RUN mvn package -DskipTests
