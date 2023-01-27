@@ -111,7 +111,7 @@ pipeline {
         stage('Image Linting') {
           steps {
             container('docker-tools') {
-              sh 'dockle docker.io/nhiunana/dso-demo'
+              sh 'dockle docker.io/nhiuana/dso-demo'
               }
             }
           }
