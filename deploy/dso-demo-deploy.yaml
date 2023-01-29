@@ -17,7 +17,6 @@ spec:
       labels:
         app: dso-demo
     spec:
-      automountServiceAccountToken: false
       serviceAccountName: dso-demo
       containers:
       - image: nhiuana/dso-demo
